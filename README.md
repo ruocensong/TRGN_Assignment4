@@ -1,6 +1,7 @@
 # TRGN_Assignment4
 
 *The program called ensg2hugo.py that takes a comma-delimited file as an argument and a column number as an input, and print a file where the Ensembl gene name has become a HUGO name.*
+The result will change the COLUMN into "gene_name".
 
 ## Download the file
 
@@ -14,3 +15,7 @@
 2. ```cd TRGN_Assignment4``` into the directary.
 3. ```mv ensg2hugo.py ~/bin/.``` to save the program in it.
 4. Run the programe ```./ensg2hugo.py -f[0-9] Your_file.csv >Your_file.hugo.csv```, an option “-f [0-9]” where -f2 would pick the 2nd column. If there is no “-f” then the first column is used.
+
+## Notice
+
+The Ensembl gene name which are not in the Homo_sapiens.GRCh37.75.gtf, but are in your files. These names will be changed as "Nan".
